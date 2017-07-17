@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BackPocketDriver</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/font-awesome.css">
 </head>
 
 <body>
@@ -30,11 +31,15 @@
     <a href="#">Contact</a>
   </div>
 
-  <div id="main">
-    <img src="../img/car.png" alt="#" class="start">
-  </div>
+  <section id="main">
+    <div class="container">
+      <div class="start-button" onclick="startDriving()">
+        <i class="fa fa-car" aria-hidden="true" style="font-size: 300px;"></i>
+      </div>
+      <h3 class="instruction">Press the car to start your journey</h3>
+    </div>
+  </section>
 
-  <h3>Press the car to start your journey</h3>
   <script type="text/javascript" src="./js/script.js"></script>
 </body>
 
