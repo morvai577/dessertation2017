@@ -60,3 +60,12 @@ body {
   margin-top: 50%;
   text-align: center;
 }
+
+#main .start-button {
+  color: green;
+  text-shadow: 3px 2px 8px grey
+}
+
+#main .instruction {
+  font-weight: 100;
+}
