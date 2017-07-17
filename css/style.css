@@ -55,11 +55,3 @@ body {
     font-size: 36px;
     margin-left: 50px;
 }
-
-.start {
-  position: fixed; /* or absolute */
-  top: 50%;
-  left: 50%;
-  height: 134px;
-  width: 104px;
-}
