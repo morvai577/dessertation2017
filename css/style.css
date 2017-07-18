@@ -1,11 +1,14 @@
 body {
     font-family: "Arial", Serif;
     background-color: #f4f4f4;
+    margin: 0;
 }
+
 .navbar {
     background-color: #0D47A1;
     overflow: hidden;
     height: 63px;
+    z-index: 700;
 }
 
 .appName {
@@ -55,13 +58,18 @@ body {
     margin-left: 50px;
 }
 
+/*.dim {
+  z-index: 0;
+  /*background-color: #0a3982;
+}*/
+
 #main {
-  margin-top: 30%;
   text-align: center;
 }
 
 #main .start-button {
-  color: green;
+  margin-top: 30%;
+  color: #008900;
   text-shadow: 3px 2px 8px grey
 }
 
