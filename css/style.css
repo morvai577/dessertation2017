@@ -90,6 +90,7 @@ body {
 }
 
 #main .instruction {
+  margin-top: 0;
   font-weight: 100;
 }
 
