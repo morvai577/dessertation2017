@@ -8,7 +8,6 @@ body {
     background-color: #0D47A1;
     overflow: hidden;
     height: 63px;
-    z-index: 700;
 }
 
 .appName {
@@ -29,16 +28,19 @@ body {
 }
 
 .side-nav {
+    z-index: 1000;
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
     top: 0;
     left: 0;
     background-color: #f2f2f2;
     overflow-x: hidden;
     padding-top: 60px;
-    transition: 0.5s;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .side-nav a {
@@ -58,11 +60,6 @@ body {
     margin-left: 50px;
 }
 
-/*.dim {
-  z-index: 0;
-  /*background-color: #0a3982;
-}*/
-
 #main {
   text-align: center;
 }
@@ -75,4 +72,15 @@ body {
 
 #main .instruction {
   font-weight: 100;
+}
+
+/*-------------------------------*/
+/*          Dark Overlay         */
+/*-------------------------------*/
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 1;
 }
