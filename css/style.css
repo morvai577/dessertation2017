@@ -1,13 +1,17 @@
 body {
-    font-family: "Arial", Serif;
-    background-color: #f4f4f4;
-    margin: 0;
+  font-family: "Arial", Serif;
+  background-color: #f4f4f4;
+  margin: 0;
 }
 
 .navbar {
-    background-color: #0D47A1;
-    overflow: hidden;
-    height: 63px;
+  margin-bottom: 0 !important;
+}
+
+.navbar-wrapper {
+  background-color: #0D47A1;
+  overflow: hidden;
+  height: 63px;
 }
 
 .appName {
@@ -18,29 +22,29 @@ body {
 }
 
 .navbar a{
-    float: left;
-    display: block;
-    color: #f4f4f4;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+  float: left;
+  display: block;
+  color: #f4f4f4;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
 .side-nav {
-    z-index: 1000;
-    height: 100%;
-    width: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #f2f2f2;
-    overflow-x: hidden;
-    padding-top: 60px;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+  z-index: 1000;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #f2f2f2;
+  overflow-x: hidden;
+  padding-top: 60px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 /*
@@ -63,8 +67,8 @@ body {
 }
 
 .sidebar-nav li {
-    text-indent: 2px;
-    line-height: 55px;
+  text-indent: 2px;
+  line-height: 55px;
 }
 
 .sidebar-nav li a{
