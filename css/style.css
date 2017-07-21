@@ -61,7 +61,8 @@ a:hover, a:visited, a:link, a:active {
 }
 
 #main .start-button {
-  margin-top: 30%;
+  margin-top: 15%;
+  font-size: 280px;
   color: #008900;
   text-shadow: 3px 2px 8px grey
 }
