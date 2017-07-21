@@ -6,6 +6,7 @@ function openSlideMenu() {
   sideBarOpen = true;
   document.getElementById('side-menu').style.width = '250px';
   document.querySelector('body').classList.add("overlay");
+  $('#main').click(closeSlideMenu);
 }
 
 function closeSlideMenu() {
