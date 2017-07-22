@@ -1,24 +1,12 @@
 body {
   font-family: "Arial", Serif;
-  background-color: #f4f4f4;
   margin: 0;
 }
 
-.navbar {
-  margin-bottom: 0 !important;
-}
-
-.navbar-wrapper {
+.navbar-default{
   background-color: #0D47A1;
-  overflow: hidden;
-  height: 63px;
-}
-
-.appName {
-  color: white;
-  font-size: 18px;
-  display: inline;
-  position: absolute;
+  border-color: #0D47A1;
+  margin-bottom: 0;
 }
 
 .navbar a{
@@ -29,6 +17,25 @@ body {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+}
+
+/*
+.navbar {
+  margin-bottom: 0 !important;
+}*/
+
+/*
+.navbar-wrapper {
+  background-color:
+  overflow: hidden;
+  height: 63px;
+}*/
+
+.appName {
+  color: white;
+  font-size: 18px;
+  display: inline;
+  position: absolute;
 }
 
 .side-nav {
@@ -82,6 +89,7 @@ body {
     text-decoration: none;
 }
 
+/*
 #main {
   text-align: center;
 }
@@ -94,6 +102,23 @@ body {
 }
 
 #main .instruction {
+  margin-top: 0;
+  font-weight: 100;
+}*/
+
+.start {
+  background-color: #f2f2f2;
+}
+
+.start-button {
+  margin-top: 12%;
+  font-size: 280px;
+  color: #008900;
+  text-shadow: 3px 2px 8px grey
+}
+
+.instruction {
+  font-size: 20px;
   margin-top: 0;
   font-weight: 100;
 }
