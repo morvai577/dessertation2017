@@ -5,14 +5,14 @@ var sideBarOpen = false;
 function openSlideMenu() {
   sideBarOpen = true;
   document.getElementById('side-menu').style.width = '250px';
-  document.querySelector('body').classList.add("overlay");
-  $('#main').click(closeSlideMenu);
+  document.querySelector('.start').classList.add("overlay");
+  $('.start').click(closeSlideMenu);
 }
 
 function closeSlideMenu() {
   sideBarOpen = false;
   document.getElementById('side-menu').style.width = '0';
-  document.querySelector('body').classList.remove("overlay");
+  document.querySelector('.start').classList.remove("overlay");
 }
 
 function startJourney() {

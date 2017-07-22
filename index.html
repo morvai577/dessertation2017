@@ -5,24 +5,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BackPocketDriver</title>
-  <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/font-awesome.css">
   <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-  <!-- Header -->
-  <nav class="navbar navbar-wrapper">
-    <span class="open-slide">
-      <a href="#" onclick="openSlideMenu()">
-        <svg width="30" height="30">
-          <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
-          <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
-          <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
-        </svg>
-      </a>
-    </span>
-    <h1 class="appName">BackPocketDriver</h1>
+  <!-- Navbar -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <span class="open-slide">
+          <a href="#" onclick="openSlideMenu()">
+            <svg width="30" height="30">
+              <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+              <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+              <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+            </svg>
+          </a>
+        </span>
+        <h1 class="appName">BackPocketDriver</h1>
+      </div>
+    </div><!-- /.container-fluid -->
   </nav>
 
   <!-- Sidebar -->
@@ -57,14 +61,19 @@
   </div>
 
   <!-- Main  -->
-  <section id="main">
-    <div class="container">
-      <div class="start-button" onclick="startJourney()">
-        <i class="fa fa-car text-center" aria-hidden="true" class="start-button"></i>
+  <div class="container-fluid start">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="start-button" onclick="startJourney()">
+          <i class="fa fa-car text-center" aria-hidden="true" class="start-button"></i>
+        </div>
+        <h3 class="instruction text-center">Press the car to start your journey!</h3>
       </div>
-      <h3 class="instruction text-center">Press the car to start your journey!</h3>
     </div>
-  </section>
+  </div>
+
+
+
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
