@@ -106,12 +106,7 @@ body {
   font-weight: 100;
 }*/
 
-.start {
-  background-color: #f2f2f2;
-}
-
 .start-button {
-  margin-top: 12%;
   font-size: 280px;
   color: #008900;
   text-shadow: 3px 2px 8px grey
