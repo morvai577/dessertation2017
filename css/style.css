@@ -161,3 +161,23 @@
   margin-top: 0;
   font-weight: 100;
 }
+
+.goal-box {
+  margin-top: 22px;
+  background-color: #f2f2f2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 90%;
+}
+
+table {
+  font-size: 20px;
+}
+
+table th, td {
+  font-weight: lighter;
+  padding-right: 40px;
+}
+
+.speedingHeading {
+  font-size: 24px;
+}
