@@ -1,6 +1,13 @@
-body {
-  font-family: "Arial", Serif;
-  margin: 0;
+#wrapper {
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    padding-right: 0;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
 }
 
 .navbar-default{
@@ -9,105 +16,133 @@ body {
   margin-bottom: 0;
 }
 
-.navbar a{
-  float: left;
-  display: block;
-  color: #f4f4f4;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/*
-.navbar {
-  margin-bottom: 0 !important;
-}*/
-
-/*
-.navbar-wrapper {
-  background-color:
-  overflow: hidden;
-  height: 63px;
-}*/
-
 .appName {
   color: white;
   font-size: 18px;
   display: inline;
   position: absolute;
+  margin-left: 80px;
+  bottom: 3px;
 }
 
-.side-nav {
-  z-index: 1000;
-  height: 100%;
-  width: 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #f2f2f2;
-  overflow-x: hidden;
-  padding-top: 60px;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+#sidebar-wrapper {
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    background: #f2f2f2;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: all 0.5s ease;
+    width: 0;
+    z-index: 1000;
 }
 
-/*
-.side-nav a {
-    padding: 10px 10px 10px 30px;
-    text-decoration: none;
-
-    display: block;
-    transition: 0.3s;
-}*/
+#sidebar-wrapper::-webkit-scrollbar {
+    display: none;
+}
 
 .sidebar-nav {
-  position: absolute;
-  top: 0;
-  width: 250px;
+  list-style: none;
   margin: 0;
+  position: absolute;
+  width: 300px;
   padding-top: 60px;
   padding-left: 0;
-  list-style: none;
+
 }
 
 .sidebar-nav li {
-  text-indent: 2px;
   line-height: 55px;
 }
 
-.sidebar-nav li a{
+.sidebar-nav li a {
   text-decoration: none;
-  font-size: 22px;
+  font-size: 20px;
   color: black;
 }
 
 .sidebar-nav li a:active,
 .sidebar-nav li a:focus {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-/*
-#main {
-  text-align: center;
+
+.hamburger {
+    background: transparent;
+    border: none;
+    display: block;
+    height: 32px;
+    margin-left: 15px;
+    position: fixed;
+    top: 10px;
+    width: 32px;
+    left: 0;
+    z-index: 999;
 }
 
-#main .start-button {
-  margin-top: 12%;
-  font-size: 280px;
-  color: #008900;
-  text-shadow: 3px 2px 8px grey
+.hamburger:hover,
+.hamburger:focus,
+.hamburger:active {
+    outline: none;
 }
 
-#main .instruction {
-  margin-top: 0;
-  font-weight: 100;
-}*/
+.hamburger.open-nav:before {
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-transition: all 0.35s ease-in-out;
+    color: #ffffff;
+    content: '';
+    display: block;
+    font-size: 14px;
+    line-height: 32px;
+    opacity: 0;
+    text-align: center;
+    width: 100px;
+}
 
-.start {
-  background-color: #f2f2f2;
+.hamburger.open-nav .hamb-top {
+    -webkit-transition: all 0.35s ease-in-out;
+    background-color: rgba(255, 255, 255, 1);
+    top: 5px;
+}
+
+.hamburger.open-nav .hamb-middle {
+    background-color: rgba(255, 255, 255, 1);
+    margin-top: -2px;
+    top: 50%;
+}
+
+.hamburger.open-nav .hamb-bottom {
+    -webkit-transition: all 0.35s ease-in-out;
+    background-color: rgba(255, 255, 255, 1);
+    bottom: 5px;
+}
+
+.hamburger.open-nav .hamb-top,
+.hamburger.open-nav .hamb-middle,
+.hamburger.open-nav .hamb-bottom {
+    height: 4px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+/* FOR left side */
+.navbar-fixed-top {
+    right: auto;
 }
 
 .goals-background {
@@ -125,34 +160,4 @@ body {
   font-size: 20px;
   margin-top: 0;
   font-weight: 100;
-}
-
-.goal-box {
-  margin-top: 22px;
-  background-color: #f2f2f2;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.speedingHeading {
-  font-size: 24px;
-}
-
-table {
-  font-size: 20px;
-}
-
-table th, td {
-  font-weight: lighter;
-  padding-right: 40px;
-}
-
-/*-------------------------------*/
-/*          Dark Overlay         */
-/*-------------------------------*/
-.overlay {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.4);
-  z-index: 1;
 }

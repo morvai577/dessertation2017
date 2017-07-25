@@ -2,27 +2,30 @@
 var driving = false;
 var sideBarOpen = false;
 
-function openSlideMenu() {
-  sideBarOpen = true;
-  document.getElementById('side-menu').style.width = '250px';
-  document.querySelector('.start').classList.add("overlay");
-  $('.start').click(closeSlideMenu);
-}
+$(document).ready(function() {
+    var open = $('.open-nav'),
+        overlay = $('.overlay'),
+        close = $('.close');
 
-function closeSlideMenu() {
-  sideBarOpen = false;
-  document.getElementById('side-menu').style.width = '0';
-  document.querySelector('.start').classList.remove("overlay");
-}
+    open.click(function() {
+        overlay.show();
+        $('#wrapper').addClass('toggled');
+    });
+
+    overlay.click(function() {
+      overlay.hide();
+      $('#wrapper').removeClass('toggled');
+    })
+});
 
 function startJourney() {
   if (sideBarOpen === false) {
     if (driving === false) {
-      document.querySelector('.fa, .fa-car').style.color = '#b00';
+      document.querySelector('.start-button').style.color = '#b00';
       driving = true;
     }
     else {
-      document.querySelector('.fa, .fa-car').style.color = '#008900';
+      document.querySelector('.start-button').style.color = '#008900';
       driving = false;
     }
   }
