@@ -181,3 +181,31 @@ table th, td {
 .speedingHeading {
   font-size: 24px;
 }
+
+.speedingFace {
+  color: yellow;
+  font-size: 50px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.speedingFire {
+  color: yellow;
+  font-size: 50px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.smoothnessFace {
+  font-size: 50px;
+  color: yellow;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.smoothnessFire {
+  font-size: 50px;
+  color: yellow;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
