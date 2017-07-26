@@ -169,11 +169,11 @@
   width: 90%;
 }
 
-table {
+.goals-table {
   font-size: 20px;
 }
 
-table th, td {
+.goals-table th, td {
   font-weight: lighter;
   padding-right: 40px;
 }
@@ -208,4 +208,25 @@ table th, td {
   color: yellow;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
+}
+
+/* -- STATS PAGE */
+.stats-box {
+  width: 100%;
+  background-color: #f2f2f2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.stats-table {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.stats-table tr {
+  height: 40px;
+}
+
+.stats-form {
+  font-size: 18px;
+  font-weight: 100;
 }

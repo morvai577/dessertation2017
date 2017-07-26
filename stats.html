@@ -22,7 +22,7 @@
         			<span class="hamb-middle"></span>
         			<span class="hamb-bottom"></span>
         		</button>
-            <h1 class="appName">My Goals</h1>
+            <h1 class="appName">My Statistics</h1>
           </div>
         </div>
       </nav>
@@ -60,61 +60,46 @@
 
       <!-- Main  -->
       <div id="page-content-wrapper">
-        <div class="container text-center goal-box">
-          <h3 class="speedingHeading">My Speeding Goal:</h3>
-          <form>
-            <table class="goals-table">
-              <tr>
-                <th>
-                  <input type="radio" name="speedingGoal" value="easy" checked> Easy
-                </th>
-              </tr>
-              <tr>
-                <th>
-                  <input type="radio" name="speedingGoal" value="medium"> Medium
-                </th>
-                <th>
-                  <i class="fa fa-smile-o speedingFace" aria-hidden="true"></i>
-                </th>
-                <th>
-                  <i class="fa fa-fire speedingFire" aria-hidden="true"></i>
-                </th>
-              </tr>
-              <tr>
-                <th style="padding-bottom: 6px;">
-                  <input type="radio" name="speedingGoal" value="hard"> Hard
-                </th>
-              </tr>
-            </table>
+        <div class="container stats-box">
+          <table class="stats-table" align="center">
+            <tr>
+              <td>
+                Total Distance:
+              </td>
+              <td>
+                100 km
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Total Time:
+              </td>
+              <td>
+                hh:mm:ss
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Total Points:
+              </td>
+              <td>
+                100
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Show Chart:
+              </td>
+            </tr>
+          </table>
+          <form class="stats-form">
+            <input type="radio" name="points" value="points" checked style="margin-left: 12px;"> Total Points
+            <input type="radio" name="goals" value="goals" style="margin-left: 62px;"> My Goals
           </form>
         </div>
-        <div class="container text-center goal-box">
-          <h3 class="speedingHeading">My Smoothness Goal:</h3>
-          <form>
-            <table class="goals-table">
-              <tr>
-                <th>
-                  <input type="radio" name="smoothnessGoal" value="easy" checked> Easy
-                </th>
-              </tr>
-              <tr>
-                <th>
-                  <input type="radio" name="smoothnessGoal" value="medium"> Medium
-                </th>
-                <th>
-                  <i class="fa fa-smile-o smoothnessFace" aria-hidden="true"></i>
-                </th>
-                <th>
-                  <i class="fa fa-fire smoothnessFire" aria-hidden="true"></i>
-                </th>
-              </tr>
-              <tr>
-                <th style="padding-bottom: 6px;">
-                  <input type="radio" name="smoothnessGoal" value="hard"> Hard
-                </th>
-              </tr>
-            </table>
-          </form>
+        <div class="container text-center">
+          <p>No journeys yet :(</p><br>
+          <p>Whenever you complete a journey longer that 10 minutes and 4kms, it will show up here!</p>
         </div>
       </div>
     </div>
